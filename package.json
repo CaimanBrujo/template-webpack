@@ -1,10 +1,13 @@
 {
   "name": "template-webpack",
   "version": "1.0.0",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "dev": "webpack serve",
-    "build": "webpack"
+    "build": "webpack",
+    "lint": "eslint src --ext .js",
+    "format": "prettier --write ."
   },
   "repository": {
     "type": "git",
@@ -20,8 +23,12 @@
   "description": "",
   "devDependencies": {
     "css-loader": "^7.1.2",
+    "eslint": "^9.29.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.5.0",
     "html-webpack-plugin": "^5.6.3",
     "mini-css-extract-plugin": "^2.9.2",
+    "prettier": "^3.5.3",
     "style-loader": "^4.0.0",
     "webpack": "^5.99.9",
     "webpack-cli": "^6.0.1",
